@@ -43,7 +43,7 @@ def draw_face_roi(face,img):
     
 
 def crop_to_boundingbox(bb,frame):
-    y,h,x,w = [int(c) for c in bb]
+    x, y, w, h = [int(c) for c in bb]
     return frame[y:y+h,x:x+w]
 fs = 30
 bpf_div= 60 * fs / 2
