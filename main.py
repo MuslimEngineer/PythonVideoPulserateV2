@@ -10,7 +10,7 @@ fs					= 30  # Sampling Frequency
 
 haar_cascade_path 	= "haarcascade_frontalface_default.xml"
 face_cascade 		= cv2.CascadeClassifier(haar_cascade_path)
-tracker 			= cv2.TrackerMOSSE_create()
+tracker 			= cv2.TrackerMOSSE_create() # alternative in some opecv versions cv2.legacy.TrackerMOSSE.create() 
 cap 				= utils.RecordingReader() if use_prerecorded else cv2.VideoCapture(0) 
 
 window				= 300 # Number of samples to use for every measurement
